@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentdetails.css"/>
+    <title>Student Details</title>
+</head>
+<body>
+    <div class="Student-container">
+        <fieldset style="padding: 2%;">
+            <form action=""autocomplete="off">
+                <h2 align="center">STUDENT DETAILS</h2>
+                <div>
+                    <label for="Name">Name<span style="color: red;">*</span></label>
+                    <input type="text" id="userName"/>
+                </div>
+                <div>
+                    <label for="email">Email<span style="color: red;">*</span></label>
+                    <input type="text"id="email"/>
+                </div>
+                <div>
+                    <label for="Phno">Phone Number<span style="color: red;">*</span></label>
+                    <input type="text"id="phno"/>
+                </div>
+                <div>
+                    <label for="city">City<span style="color: red;">*</span></label>
+                    <input type="text"  onclick="my()" id="city"/>
+                </div>
+                <div class="btn">
+                    <input type="button" value="SUBMIT" class="button" onclick="enterData()"/>
+                    <input type="reset" class="button"  value="RESET"/>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <br><br>
+    <div class="Student-data" align="center">
+        <h2 align="center">STUDENT DATA</h2>
+        <table
+        id="studentlist"
+        width="80%"
+        border="2px"
+        cellspacing="0px"
+        cellspadding="5px"
+        >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+    <script src="StudentDetails.js"></script>
+</body>
+</html>
+
